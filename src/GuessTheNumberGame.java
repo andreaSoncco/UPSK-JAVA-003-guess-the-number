@@ -14,6 +14,7 @@ public class GuessTheNumberGame {
         HumanPlayer human = new HumanPlayer();
         System.out.println("Para empezar a jugar escribe tu nombre: ");
         Scanner sc = new Scanner(System.in);
+        human.setScanner(sc);
         String name = sc.nextLine();
         human.setName(name);
 
