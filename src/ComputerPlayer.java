@@ -1,12 +1,15 @@
 import java.util.Random;
 
 public class ComputerPlayer extends Player {
-    Random random;
+    private Random random;
+
+    public ComputerPlayer() {
+        this.random = new Random();
+    }
 
     @Override
     public int makeGuess() {
-        this.random = new Random();
-        int computerPlayerNum = random.nextInt(100);
+        int computerPlayerNum = random.nextInt(101);
         this.guesses = new int[0];
         int[] newGuesses = new int[this.guesses.length + 1];
         System.arraycopy(this.guesses,0,newGuesses,0,guesses.length);
