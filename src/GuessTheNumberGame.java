@@ -9,7 +9,7 @@ public class GuessTheNumberGame {
     public static void main(String[] args) {
         GuessTheNumberGame game = new GuessTheNumberGame();
         game.random = new Random();
-        int targetNumber = game.random.nextInt(100);
+        int targetNumber = game.random.nextInt(101);
 
         HumanPlayer human = new HumanPlayer();
         System.out.println("Para empezar a jugar escribe tu nombre: ");
@@ -64,7 +64,7 @@ public class GuessTheNumberGame {
             //  Vemos si el número que ingreso el player 1 adivino el que generamos
             boolean adivinoComputer = this.checkGuess(computer);
             if (adivinoComputer) {
-                System.out.println("La computadora ha ganado, el número fue: : " + this.targetNumber + " . En el turno: " + (intentos) + " . Historial de suposiciones: " + Arrays.toString(human.getGuesses()));
+                System.out.println("La computadora ha ganado, el número fue: : " + this.targetNumber + " . En el turno: " + (intentos) + " . Historial de suposiciones: " + Arrays.toString(computer.getGuesses()));
                 gameOver = true;
             } else {
                 System.out.println(this.checkHighOrLow(this.targetNumber, guessNumberComputer));
