@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class HumanPlayerTest {
 
     @Test
-    public void testScanner() {
+    public void testMakeGuessWithScanner() {
         Scanner mockScanner = Mockito.mock(Scanner.class);
         Mockito.when(mockScanner.nextInt()).thenReturn(42);
 
