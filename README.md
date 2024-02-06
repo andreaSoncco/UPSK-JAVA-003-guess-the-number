@@ -1,6 +1,6 @@
 # GUESS THE NUMBER GAME (Java) 🎮🎯 - "Adivina el número" 🎲🔮
 
-Se puede empezar este juego corriendo la clase GuessTheNumberGame y seguir la partida en la consola ▶️✔️
+Se puede empezar este juego corriendo la clase GuessTheNumberGame y seguir la partida en la consola ▶️
 
 ## Índice
 
@@ -29,22 +29,21 @@ la tentativa anterior, si fue "muy alta" o "muy baja".
 
 ## 3. ASPECTOS TÉCNICOS Y DOCUMENTACIÓN DEL PROYECTO.
 
-En el presente proyecto se implementan 4 clases en Java para darle funcionalidad a todo el
-programa, en la clase GuessTheNumberGame se ejecuta el método `main` y en la otra clase abstracta
-Player se declaran los atributos y los principales métodos a emplear, las otras dos subclases
-HumanPlayer y ComputerPlayer son las que heredan el método estático `makeGuess`.
+En este proyecto Java, se implementan cuatro clases para dar funcionalidad al programa. La clase principal es 
+GuessTheNumberGame, donde se ejecuta el método main. La clase abstracta Player declara los atributos y métodos 
+principales, mientras que las subclases HumanPlayer y ComputerPlayer heredan el método estático makeGuess.
 
-Para poder trabajar de forma ordenada se crean tres métodos en la clase GuessTheNumberGame que
-seguiran paso a paso todo el procedimiento del juego, empezando por el método `checkGuess` donde
-se compara el número objetivo con el número de la jugadora, luego le sigue el método `HighOrLow`
-que se encarga de devolver la cadena de texto con la información si la cantidad fue muy alta o
-muy baja, el tercer método es `playGame` donde se ejecuta la mayor parte de la lógica del programa
-ya que establece el numero de intentos y alterna las partidas entre la jugadora y la máquina.
+Para mantener un flujo ordenado, se han creado tres métodos en la clase GuessTheNumberGame. En primer lugar, 
+el método checkGuess compara el número objetivo con el número del jugador. A continuación, el método HighOrLow 
+devuelve un mensaje indicando si la cantidad fue demasiado alta o baja. El tercer método, playGame, contiene la 
+mayor parte de la lógica del programa, estableciendo el número de intentos y alternando las jugadas entre el jugador 
+y la máquina.
 
-Parte importante de la funcionalidad se logro aplicando condicionales y bucles
+La funcionalidad se logra mediante la aplicación de condicionales y bucles, lo que permite un control preciso del
+flujo del juego.
 
-Al final del proyecto se hicieron pruebas unitarias con las librerias `JUnit5` y `Mockito` para testear
-los métodos makeGuess y main.
+Al finalizar el proyecto, se realizaron pruebas unitarias con las bibliotecas JUnit5 y Mockito para evaluar los
+métodos makeGuess y main.
 
 ## 4. INSTRUCCIONES DEL JUEGO.
 
@@ -69,7 +68,7 @@ Para realizar el proyecto me organice utizando Github Project. De esta manera pl
 y dividi el trabajo en metas por sprint usando `milestones` que contienen `issues` o tareas más pequeñas.
 Aplique metodología SCRUM de trabajo ágil.
 
-Para el desarrollo me guie del siguiente Diagrama de Clases o Lenguaje de Modelado Unificado 💡 que me
+Para el desarrollo me guie del siguiente Diagrama de Clases o Lenguaje de Modelado Unificado (ULM) 💡 que me
 ayudo a poder ordenarme respecto a las funciones o métodos que se necesitaban crear y codear la totalidad
 del proyecto.
 
@@ -77,15 +76,19 @@ del proyecto.
 
 ### 5.2. Desarrollo del Proyecto.
 
-El desarrollo total de la libreria tomo tres sprints y al cabo de cada uno fui tomando en cuenta el
+El desarrollo total del proyecto tomo tres sprints y al cabo de cada uno fui tomando en cuenta el
 feedback recibido para hacer mejoras, a continuación pasaré a mostrar la imagen de mi tablero en 
 Github Project donde guió el desarrollo por 7 hitos:
 
-- Hito 1 ♟: Configuración del entorno de trabajo con Java y el IDE IntelliJ
+**Tablero de Github Project**
 
-- Hito 2 💫: Creación de la primera clase del proyecto que contenga el método main
+![Tablero de Github Project](img/tablero.png)
 
-- Hito 3 📚: Comprensión del Diagrama de Clases
+- Hito 1 ♟: Configuración del entorno de trabajo con Java y el IDE IntelliJ.
+
+- Hito 2 💫: Creación de la primera clase del proyecto que contenga el método main.
+
+- Hito 3 📚: Comprensión del Diagrama de Clases.
 
 - Hito 4 ⭐️: Implementación de las clases que representan a la jugadora humana y la lógica para generar
              un número aleatoreo y verificar si el usuario asertó.
@@ -93,13 +96,9 @@ Github Project donde guió el desarrollo por 7 hitos:
 - Hito 5 ⌨️: Creacción de la clase que representa a la segunda jugadora (la computadora) y el desarrollo
              de la lógica para alternar el juego entre ambas.
 
-- Hito 6 🌼: Configuración de las librerias JUnit5 y Mockito para los tests
+- Hito 6 🌼: Configuración de las librerias JUnit5 y Mockito para los tests.
 
-- Hito 7 ⚡️: Diseño de las pruebas unitarias para cubrir la lógica del juego
-
-**Tablero de Github Project**
-
-![Tablero de Github Project](img/tablero.png)
+- Hito 7 ⚡️: Diseño de las pruebas unitarias para cubrir la lógica del juego.
 
 **Cuadro de Milestones**
 
@@ -108,10 +107,10 @@ Github Project donde guió el desarrollo por 7 hitos:
 ## 6. HERRAMIENTAS DE ELABORACIÓN
 
 👩‍🔧💻
-- Java: para codear el proyecto haciendo uso de clases como `Random` y `Scanner`
-- Programación Orientada a Objetos (OOP): para aplicar las propiedades de encapsulamiento, abstracción, herencia y polimorfismo
-- Terminal de Git Bash o PowerShell
-- JUnit5: para generar las pruebas unitarias
-- Mockito: para mockear algunas clases
-- Github Project: para planificar el tiempo y dividir las tareas
-- Diagrama de Clases o Lenguaje de Modelado Unificado (ULM)
+- Java: Utilizado para la implementación del proyecto, haciendo uso de clases como `Random` y `Scanner`.
+- Programación Orientada a Objetos (OOP): Aplicación de principios clave como encapsulamiento, abstracción, herencia y polimorfismo.
+- Terminal de Git Bash o PowerShell.
+- JUnit5: para generar las pruebas unitarias.
+- Mockito: para mockear algunas clases.
+- Github Project: para planificar el tiempo y dividir las tareas.
+- Diagrama de Clases o Lenguaje de Modelado Unificado (ULM).
